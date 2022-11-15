@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">	
+
+	<title>RPIC</title>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/unicamp.gif" width="40px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Atalhos
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#usoPessoal"><i class="bi bi-laptop"></i>Instalação: Uso Pessoal</a></li>
+                  <li><a class="dropdown-item" href="#usoEmpresarial">Instalação: Uso Empresarial</a></li>
+                  <li><a class="dropdown-item" href="#instalacao">Sobre a instalacao</a></li>
+                  <li><a class="dropdown-item" href="#registro.html">Registre-se</a></li>
+                  <li><a class="dropdown-item" href="login.html">Já tem uma conta?</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="equipe.html">Nossa equipe</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-danger" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- container cursos -->
+	<div class="container myContainer">
+
+	  <h4 class="display-4"><i class="bi bi-laptop"></i> Nossa Escola</h4>	
+
+	  <p class="lead">Nossa escola oferece uma ótima estrutura para todos os cursos.</p>
+
+	  <!--- início carrossel --> 
+
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+
+		  <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>		    
+
+		  </div>
+
+		  <div class="carousel-inner">
+
+		    <div class="carousel-item active">
+		      <img src="img/auditorio.jpg" class="d-block w-100" alt="Auditório">
+		    </div>
+
+		    <div class="carousel-item">
+		      <img src="img/lab-ds.jpg" class="d-block w-100" alt="Laboratório">
+		    </div>
+
+		    <div class="carousel-item">
+		      <img src="img/lab-enf.jpg" class="d-block w-100" alt="Laboratório">
+		    </div>
+
+		    <div class="carousel-item">
+		      <img src="img/predio.jpg" class="d-block w-100" alt="Prédio">
+		    </div>		    
+
+		  </div>
+
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+
+		</div>
+	  <!--- fim carrossel -->
+
+	</div>
+	<!-- fim container cursos -->	
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>

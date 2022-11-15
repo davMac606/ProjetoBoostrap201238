@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.2.2-dist\css\bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/unicamp.gif" width="40px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nossaEscola.html">Nossa Escola</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cursos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="ds.html"><i class="bi bi-laptop"></i> Desenvolvimento de
+                                    Sistemas</a></li>
+                            <li><a class="dropdown-item" href="edif.html">Edificações</a></li>
+                            <li><a class="dropdown-item" href="enf.html">Enfermagem</a></li>
+                            <li><a class="dropdown-item" href="geo.html">Geodésia</a></li>
+                            <li><a class="dropdown-item" href="mec.html">Mecânica</a></li>
+                            <li><a class="dropdown-item" href="mec.html">Qualidade</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="estagios.html">Estágios</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-danger" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container myContainer">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.6809190712934!2d-47.29921228442062!3d-22.777219838988294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8982b87860d1b%3A0x688665a9e1447e5!2sCemit%C3%A9rio%20Municipal%20Nova%20Odessa!5e0!3m2!1spt-BR!2sbr!4v1668013120592!5m2!1spt-BR!2sbr"
+            width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="container myContainer">
+        <hr>
+        <p class="lead">Nos mande uma mensagem!</p>
+        <form>
+            <div class="row">
+                <div class="col-md-6 mt-3">
+                    <label class="form-label">Nome:</label><br>
+
+                    <input class="form-control" type="text" name="nome" required>
+                </div>
+
+                <div class="col-md-4 mt-3">
+                    <label class="form-label">E-mail:</label><br>
+
+                    <input class="form-control" type="email" name="email" required>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <label class="form-label">Telefone:</label><br>
+
+                    <input class="form-control" type="text" name="tel" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mt-3">
+                    <label class="form-label">Cidade:</label><br>
+
+                    <input class="form-control" type="text" name="cidade" required>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <label class="form-label">Estado:</label><br>
+                    <select class="form-select">
+                        <option selected></option>
+                        <option>SP</option>
+                        <option>RJ</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 mt-3">
+                    <label class="form-label">CEP:</label><br>
+                    <input class="form-control" type="text" name="CEP" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 mt-3">
+                    <label class="form-label">Mensagem:</label><br>
+                    <textarea rows="6" class="form-control"></textarea>
+                </div>
+            </div>
+            <input type="submit" name="envia" class="btn btn-danger">
+
+            <input type="clear" name="envia" class="btn btn-danger">
+
+
+        </form>
+    </div>
+</body>
+
+</html>
