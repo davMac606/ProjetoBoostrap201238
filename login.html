@@ -12,26 +12,14 @@
 
   <title>RPIC</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-    function addTable() {
-      var table = document.getElementById('tabelaDados');
-      var row = table.insertRow(1);
-      var cell1 = row.insertCell(0);
-      var cell2 = row.insertCell(1);
-      cell1.innerHTML = document.getElementById('username').value;
-      cell2.innerHTML = document.getElementById('senha').value;
-    }
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 
-    function limpaImput() {
-      document.getElementById('username').value = null;
-      document.getElementById('senha').value = null;
-    }
-
-  </script>
 </head>
 
 <body>
@@ -55,12 +43,12 @@
               Atalhos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#usoPessoal"><i class="bi bi-laptop"></i>Instalação: Uso Pessoal</a>
+              <li><a class="dropdown-item disabled" href="#usoPessoal"><i class="bi bi-laptop"></i>Instalação: Uso Pessoal</a>
               </li>
-              <li><a class="dropdown-item" href="#usoEmpresarial">Instalação: Uso Empresarial</a></li>
-              <li><a class="dropdown-item" href="#instalacao">Sobre a instalacao</a></li>
-              <li><a class="dropdown-item" href="#registro.html">Registre-se</a></li>
-              <li><a class="dropdown-item" href="login.html">Já tem uma conta?</a></li>
+              <li><a class="dropdown-item disabled" href="#usoEmpresarial">Instalação: Uso Empresarial</a></li>
+              <li><a class="dropdown-item disabled" href="#instalacao">Sobre a instalacao</a></li>
+              <li><a class="dropdown-item" href="registro.html">Registre-se</a></li>
+              <li><a class="dropdown-item disabled" href="login.html"><i class="bi bi-geo-alt-fill"></i>Você está aqui</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -75,81 +63,27 @@
     </div>
   </nav>
 
-  <div class="container-mt-3 myContainer">
+  <div class="container myContainer">
     <h4 class="display-5">Bem-vindo ao Login do RPIC!</h4>
+    <div class="row">
     <form>
-      <div class="row">
+      
       <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <input type="email" class="form-control" id="floatingInput" placeholder="wannakry@gmail.com" required>
         <label for="floatingInput">Endereço de e-mail</label>
       </div>
       <div class="form-floating mb-3">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <input type="password" class="form-control" placeholder="Password" required>
         <label for="floatingPassword">Senha</label>
       </div>
-
+      </div>
       <input type="radio" name="remind" id="remind">
       <label for="remind">Lembrar de mim</label><br><br>
-      <input type="submit" class="button" placeholder="Cadastrar">
-    </div>
+
+         <input type="submit" class="btn btn-danger" placeholder="Cadastrar" value="Cadastrar" id="btnCadastro" name="btnCadastro" >
     </form>
-    
-  </div>
+    </div> 
 
-  <div class="container myContainer">
-
-    <h4 class="display-5"><i class="bi bi-book"></i>O que é o RPIC?</h4>
-
-
-    <div class="row">
-
-      <!-- 1a div da 1a row -->
-      <div class="col-md-4 col-sm-12">
-
-        <div class="card">
-          <img src="img/edificacoes.jpg" class="card-img-top" alt="Edificações">
-          <div class="card-body">
-            <h5 class="card-title">História</h5>
-            <p class="card-text">O Runtime Program Interface Check(RPIC) é um software desenvolvido para inspecionar o
-              funcionamento de máquinas.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- 2a div da 1a row -->
-      <div class="col-md-4 col-sm-12">
-        <div class="card">
-          <img src="img/enfermagem.png" class="card-img-top" alt="Enfermagem">
-          <div class="card-body">
-            <h5 class="card-title">Enfermagem</h5>
-            <p class="card-text">Curso focado na área da saúde. Salve vidas!</p>
-            <a href="enfermagem.html" class="btn btn-danger">Conheça</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3a div da 1a row -->
-      <div class="col-md-4 col-sm-12">
-        <div class="card">
-          <img src="img/geodesia.jpg" class="card-img-top" alt="Geodésia">
-          <div class="card-body">
-            <h5 class="card-title">Geodésia</h5>
-            <p class="card-text">Para você gosta de mapas, satélites e cartografia!</p>
-            <a href="geodesia.html" class="btn btn-danger">Conheça</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-  </div>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
